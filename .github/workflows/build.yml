@@ -98,7 +98,7 @@ jobs:
       - name: Upload build artifact
         env: 
            SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
-        if: ${{ env.SIGNING_KEY = '' }}
+        if: ${{ env.SIGNING_KEY != '222' }}
         uses: actions/upload-artifact@v4
         with:
           name: APatch
@@ -122,7 +122,7 @@ jobs:
       - name: Release apk
         env: 
           SIGNING_KEY: ${{ secrets.SIGNING_KEY }}
-        if: ${{ env.SIGNING_KEY != '' && github.ref_type == 'tag' }}
+        if: ${{ env.SIGNING_KEY != '222' }}
         continue-on-error: true
         uses: ncipollo/release-action@v1
         with:
