@@ -1,7 +1,7 @@
 [versions]
-agp = "8.5.0"
+agp = "8.5.1"
 kotlin = "2.0.0"
-ksp = "2.0.0-1.0.22"
+ksp = "2.0.0-1.0.23"
 compose-bom = "2024.06.00"
 lifecycle = "2.8.3"
 accompanist = "0.34.0"
@@ -75,4 +75,4 @@ bcpkix = { group = "org.bouncycastle", name = "bcpkix-jdk18on", version = "1.78.
 
 com-google-accompanist-webview = { group = "com.google.accompanist", name = "accompanist-webview", version.ref = "accompanist" }
 androidx-webkit = { group = "androidx.webkit", name = "webkit", version.ref = "webkit" }
-cxx = { module = "org.lsposed.libcxx:libcxx", version = "27.0.11718014-beta1" }
+cxx = { module = "org.lsposed.libcxx:libcxx", version = "27.0.12077973" }
